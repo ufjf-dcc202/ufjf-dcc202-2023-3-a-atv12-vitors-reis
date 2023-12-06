@@ -12,11 +12,44 @@
         <p>Esta é a página principal que usa JavaScript para adicionar iteração.</p>
         <section>
         <form name ="entrada">
-            <input />
-            <input name = "fruta">
-            <input name = "quantidade">
+            <fieldset>
+                <legend>Origem</legend>
+            <label><input type="radio" name = "origem"
+            value="pomar"/>Pomar</label>
+            <label><input type="radio" name = "origem"
+            value="joao"/>João</label>
+            <label><input type="radio" name = "origem"
+                value="maria"/>Maria</label>
+            </fieldset>
+            <fieldset>
+                <legend>Destino</legend>
+            <label><input type="radio" name = "origem"
+            value="pomar"/>Pomar</label>
+            <label><input type="radio" name = "origem"
+            value="joao"/>João</label>
+            <label><input type="radio" name = "origem"
+                value="maria"/>Maria</label>
+                
+
+            </fieldset>
+
+            <input name = "fruta"/>
+                <label for="ifruta">Fruta:</label>
+                <select id="ifruta" name="fruta">
+                    <option value="maca">Maça</option>
+                    <option value="pera">Pera</option>
+                    <option value="banana">Banana</option>
+                    <option value="uva">Uva</option>
+                </select>
+                <label id="iqtd">Quantidade:</label>
+
+            <input type="number" name = "quantidade"
+                min="0" max="12" step="1">
             <button type = "submit">Enviar</button>
         </form>
+        </section>
+        <section>
+            <h2>Estoques</h2>
         </section>
     </main>
     
